@@ -1,0 +1,40 @@
+.welcome-container {
+  background-color: rgb(238, 236, 240);
+}
+
+.projects-container {
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+}
+
+.container {
+  min-height: 50vh;
+  padding: 2rem;
+}
+
+.center-column {
+  width: 80vw;
+}
+
+.mat-display-1 {
+  margin: 0;
+}
+
+mat-card {
+  max-width: 300px;
+  min-height: 150px;
+}
+
+.mat-card{
+  display:flex;
+  flex-direction: column;
+}
+
+.mat-card-header {
+  flex-shrink: 0;
+}
+
+.mat-card-content{
+  flex-grow: 1;
+  overflow: auto;
+}
