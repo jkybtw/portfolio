@@ -1,10 +1,11 @@
-<mat-toolbar class="mat-elevation-z8">
+<mat-toolbar>
   <div>
-    <a [routerLink]="['#home']" routerLinkActive="router-link-active" > Home
-    </a>
-    <a [routerLink]="['/guides']" routerLinkActive="router-link-active" > Guides
-    </a>
-    <a [routerLink]="['#projects']" routerLinkActive="router-link-active" > Projects
-    </a>
+    <button mat-button [routerLink]="['/']" routerLinkActive="router-link-active">Home</button>
+    <button mat-button [matMenuTriggerFor]="guides">OSRS</button>
+    <mat-menu #guides="matMenu">
+      <button mat-menu-item [routerLink]="['/guides/potions']" routerLinkActive="router-link-active" >Potions Guide</button>
+      <button mat-menu-item [routerLink]="['/guides/calculator']" routerLinkActive="router-link-active" >Potions Calculator</button>
+    </mat-menu>
+    <button mat-button [routerLink]="['#projects']" routerLinkActive="router-link-active">Projects</button>
   </div>
 </mat-toolbar>

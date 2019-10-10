@@ -1,14 +1,14 @@
 div {
-  width: 80vw;
+  width: calc(80vw + 32px);
   margin: auto;
-}
-
-.router-link-active {
-  border: 1px solid currentColor;
 }
 
 a, a:visited, a:hover, a:active {
   color: inherit;
   text-decoration: none;
   margin-right: 1rem;
+}
+
+mat-toolbar {
+  background: #dbe1ff;
 }

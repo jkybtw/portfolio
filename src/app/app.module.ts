@@ -14,12 +14,17 @@ import { MatCardModule } from '@angular/material/card';
 import { MainComponent } from './components/main/main.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { PotionsComponent } from './components/guides/potions/potions.component';
+import { CalculatorComponent } from './components/guides/calculator/calculator.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    HeaderComponent
+    HeaderComponent,
+    PotionsComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatIconModule,
     MatListModule,
     FlexLayoutModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

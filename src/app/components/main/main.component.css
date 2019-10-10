@@ -1,9 +1,9 @@
 .welcome-container {
-  background-color: rgb(238, 236, 240);
+  background-color: #edf0ff;
 }
 
 .projects-container {
-  background-color: rgb(255, 255, 255);
+  background-color: #dbe1ff;
   padding: 2rem;
 }
 
@@ -23,6 +23,7 @@
 mat-card {
   max-width: 300px;
   min-height: 150px;
+  background: #edf0ff;
 }
 
 .mat-card{
