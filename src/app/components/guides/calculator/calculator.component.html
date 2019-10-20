@@ -1,1 +1,31 @@
-<p>calculator works!</p>
+<div class="container">
+  <h1 class="mat-display-2">Chambers of Xeric Potion Calculator</h1>
+  <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="start center" fxLayoutAlign.lt-sm="start start" fxLayoutGap="1rem grid">
+    <mat-form-field>
+      <mat-label>How many people?</mat-label>
+      <input type="number" matInput [(ngModel)]="numPeople" min=1 max=100>
+    </mat-form-field>
+    <mat-checkbox>Split overloads (2 dose)</mat-checkbox>
+    <mat-checkbox>Extras for piles</mat-checkbox>
+  </div>
+  <h2 class="mat-display-1">Potions per Person</h2>
+  <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="start start" fxLayoutAlign.lt-sm="start start" fxLayoutGap="1rem grid">
+    <mat-form-field>
+      <mat-label>Overloads</mat-label>
+      <input type="number" matInput [(ngModel)]="numOvls" min=1>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Prayer Enhances</mat-label>
+      <input type="number" matInput [(ngModel)]="numPrays" min=1>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Restores</mat-label>
+      <input type="number" matInput [(ngModel)]="numRestores" min=1>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Brews</mat-label>
+      <input type="number" matInput [(ngModel)]="numBrews" min=1>
+    </mat-form-field>
+  </div>
+  <h3>Total</h3>
+</div>

@@ -17,6 +17,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { PotionsComponent } from './components/guides/potions/potions.component';
 import { CalculatorComponent } from './components/guides/calculator/calculator.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,11 @@ import { MatMenuModule } from '@angular/material/menu';
     MatListModule,
     FlexLayoutModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatCheckboxModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
