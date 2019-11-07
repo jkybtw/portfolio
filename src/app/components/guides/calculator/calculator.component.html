@@ -1,31 +1,61 @@
 <div class="container">
-  <h1 class="mat-display-2">Chambers of Xeric Potion Calculator</h1>
-  <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="start center" fxLayoutAlign.lt-sm="start start" fxLayoutGap="1rem grid">
-    <mat-form-field>
-      <mat-label>How many people?</mat-label>
-      <input type="number" matInput [(ngModel)]="numPeople" min=1 max=100>
-    </mat-form-field>
-    <mat-checkbox>Split overloads (2 dose)</mat-checkbox>
-    <mat-checkbox>Extras for piles</mat-checkbox>
+  <div class="container-padding">
+    <h1 class="mat-display-2">Chambers of Xeric Potion Calculator</h1>
+    <div class="options" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="start center" fxLayoutAlign.lt-sm="start start" fxLayoutGap="1rem grid">
+      <mat-form-field>
+        <mat-label>How many people?</mat-label>
+        <input type="number" matInput [(ngModel)]="numPeople" min=1 max=100>
+      </mat-form-field>
+      <mat-checkbox [(ngModel)]="split" (change)="updateOvls()" matTooltip="Take two doses of overload per person" matTooltipPosition="above">Split overloads</mat-checkbox>
+      <mat-checkbox [(ngModel)]="extras" (change)="updateRestores(); updateBrews()" matTooltip="One extra brew and restore per person" matTooltipPosition="above">Extras for piles</mat-checkbox>
+    </div>
+    <h2 class="mat-display-1">Potions per Person</h2>
+    <div class="options" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="start start" fxLayoutAlign.lt-sm="start start" fxLayoutGap="1rem grid">
+      <mat-form-field>
+        <mat-label>Overloads</mat-label>
+        <input type="number" matInput [(ngModel)]="numOvls" (change)="updateOvls()" min=1>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Prayer Enhances</mat-label>
+        <input type="number" matInput [(ngModel)]="numPrays" (change)="updatePrays()" min=1>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Restores</mat-label>
+        <input type="number" matInput [(ngModel)]="numRestores" (change)="updateRestores()" min=1>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Brews</mat-label>
+        <input type="number" matInput [(ngModel)]="numBrews" (change)="updateBrews()" min=1>
+      </mat-form-field>
+    </div>
   </div>
-  <h2 class="mat-display-1">Potions per Person</h2>
-  <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="start start" fxLayoutAlign.lt-sm="start start" fxLayoutGap="1rem grid">
-    <mat-form-field>
-      <mat-label>Overloads</mat-label>
-      <input type="number" matInput [(ngModel)]="numOvls" min=1>
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label>Prayer Enhances</mat-label>
-      <input type="number" matInput [(ngModel)]="numPrays" min=1>
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label>Restores</mat-label>
-      <input type="number" matInput [(ngModel)]="numRestores" min=1>
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label>Brews</mat-label>
-      <input type="number" matInput [(ngModel)]="numBrews" min=1>
-    </mat-form-field>
+</div>
+<div class="container">
+  <div class="container-padding">
+    <div>
+      <h3 class="mat-display-2">Total Potions:</h3>
+      <mat-list>
+        <mat-list-item>{{totalOvls}} Overloads</mat-list-item>
+        <mat-list-item>{{totalPrays}} Prayer Enhances</mat-list-item>
+        <mat-list-item>{{totalRestores}} Restores</mat-list-item>
+        <mat-list-item>{{totalBrews}} Brews</mat-list-item>
+      </mat-list>
+    </div>
   </div>
-  <h3>Total</h3>
+</div>
+<div class="container">
+  <div class="container-padding">
+    <div>
+      <h3 class="mat-display-2">Total Ingredients:</h3>
+      <mat-list>
+        <mat-list-item>{{totalOvls + totalPrays + totalRestores + totalBrews}} Water-filled Vials</mat-list-item>
+        <mat-list-item>{{totalBrews + totalOvls}} Endarkened Juice</mat-list-item>
+        <mat-list-item>{{totalRestores + totalOvls}} Stinkhorn Mushroom</mat-list-item>
+        <mat-list-item>{{totalPrays + totalOvls}} Cicely</mat-list-item>
+        <mat-list-item>{{totalOvls}} Noxifer</mat-list-item>
+        <mat-list-item>{{totalRestores + totalBrews + totalPrays}} Buchu Leaf</mat-list-item>
+        <mat-list-item>{{totalOvls * 3}} Golpar</mat-list-item>
+      </mat-list>
+    </div>
+  </div>
 </div>

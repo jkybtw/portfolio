@@ -1,9 +1,33 @@
 .container {
-  padding-top: 1rem;
-  width: 80vw;
-  margin: auto;
+  padding: 64px 0px;
+  background-color: #edf0ff;
+}
+
+.container:nth-child(even) {
+  background-color: #dbe1ff;
 }
 
 .mat-form-field-wrapper {
   padding-bottom: 0px;
+}
+
+.container-padding {
+  width: 80vw;
+  margin: auto;
+}
+
+.options {
+  margin: 0 !important;
+}
+
+mat-form-field {
+  padding-bottom: 0 !important;
+}
+
+.mat-display-2, .mat-display-1 {
+  margin-bottom: 2rem !important;
+}
+
+.mat-display-1 {
+  margin-top: 1rem;
 }

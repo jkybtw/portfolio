@@ -4,12 +4,11 @@
 
 .projects-container {
   background-color: #dbe1ff;
-  padding: 2rem;
 }
 
 .container {
   min-height: 50vh;
-  padding: 2rem;
+  padding: 64px;
 }
 
 .center-column {
