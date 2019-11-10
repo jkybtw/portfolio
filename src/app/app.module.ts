@@ -22,6 +22,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { B2sliteComponent } from './osrs/b2slite/b2slite.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MainComponent,
     HeaderComponent,
     PotionsComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    B2sliteComponent
   ],
   imports: [
     BrowserModule,
