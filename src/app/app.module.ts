@@ -14,15 +14,15 @@ import { MatCardModule } from '@angular/material/card';
 import { MainComponent } from './components/main/main.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { PotionsComponent } from './components/guides/potions/potions.component';
-import { CalculatorComponent } from './components/guides/calculator/calculator.component';
+import { PotionsComponent } from './components/osrs/potions/potions.component';
+import { CalculatorComponent } from './components/osrs/calculator/calculator.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { B2sliteComponent } from './osrs/b2slite/b2slite.component';
+import { B2sliteComponent } from './components/osrs/b2slite/b2slite.component';
 
 @NgModule({
   declarations: [

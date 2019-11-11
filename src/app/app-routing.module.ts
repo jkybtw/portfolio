@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
-import { PotionsComponent } from './components/guides/potions/potions.component';
-import { CalculatorComponent } from './components/guides/calculator/calculator.component';
+import { PotionsComponent } from './components/osrs/potions/potions.component';
+import { CalculatorComponent } from './components/osrs/calculator/calculator.component';
+import { B2sliteComponent } from './components/osrs/b2slite/b2slite.component';
 
 
 const routes: Routes = [
   { path: '', component: MainComponent },
-  { path: 'guides/calculator', component: CalculatorComponent },
-  { path: 'guides/potions', component: PotionsComponent }
+  { path: 'osrs/b2sLite', component: B2sliteComponent },
+  { path: 'osrs/calculator', component: CalculatorComponent },
+  { path: 'osrs/potions', component: PotionsComponent }
 ];
 
 @NgModule({

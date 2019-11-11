@@ -1,10 +1,11 @@
 <mat-toolbar>
   <div>
     <button mat-button [routerLink]="['/']" routerLinkActive="router-link-active">Home</button>
-    <button mat-button [matMenuTriggerFor]="guides">OSRS</button>
-    <mat-menu #guides="matMenu">
-      <button mat-menu-item [routerLink]="['/guides/potions']" routerLinkActive="router-link-active" >Potions Guide</button>
-      <button mat-menu-item [routerLink]="['/guides/calculator']" routerLinkActive="router-link-active" >Potions Calculator</button>
+    <button mat-button [matMenuTriggerFor]="osrs">OSRS</button>
+    <mat-menu #osrs="matMenu">
+      <button mat-menu-item [routerLink]="['/osrs/b2sLite']" routerLinkActive="router-link-active" >b2sLite</button>
+      <button mat-menu-item [routerLink]="['/osrs/potions']" routerLinkActive="router-link-active" >Potions Guide</button>
+      <button mat-menu-item [routerLink]="['/osrs/calculator']" routerLinkActive="router-link-active" >Potions Calculator</button>
     </mat-menu>
     <button mat-button [routerLink]="['#projects']" routerLinkActive="router-link-active">Projects</button>
   </div>
