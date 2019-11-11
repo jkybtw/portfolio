@@ -23,6 +23,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { B2sliteComponent } from './components/osrs/b2slite/b2slite.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { B2sliteComponent } from './components/osrs/b2slite/b2slite.component';
     MatFormFieldModule,
     MatCheckboxModule,
     FormsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

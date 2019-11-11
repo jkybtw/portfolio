@@ -4,9 +4,9 @@
     <button mat-button [matMenuTriggerFor]="osrs">OSRS</button>
     <mat-menu #osrs="matMenu">
       <button mat-menu-item [routerLink]="['/osrs/b2sLite']" routerLinkActive="router-link-active" >b2sLite</button>
-      <button mat-menu-item [routerLink]="['/osrs/potions']" routerLinkActive="router-link-active" >Potions Guide</button>
       <button mat-menu-item [routerLink]="['/osrs/calculator']" routerLinkActive="router-link-active" >Potions Calculator</button>
+      <button mat-menu-item [routerLink]="['/osrs/potions']" routerLinkActive="router-link-active" >Potions Guide</button>
     </mat-menu>
-    <button mat-button [routerLink]="['#projects']" routerLinkActive="router-link-active">Projects</button>
+    <button mat-button (click)="comingSoon()">Projects</button>
   </div>
 </mat-toolbar>

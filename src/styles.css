@@ -7,4 +7,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   color: #333747;
 }
 
-/* https://colors.muz.li/palette/4a4e66/333747/edf0ff/dbe1ff/dbe1ff */
+simple-snack-bar span {
+  color: #F4F6FF;
+}
+
+mat-card {
+  background: #FAFFFF;
+}
+
+/* https://colors.muz.li/palette/4a4e66/333747/edf0ff/dbe1ff/faffff */
