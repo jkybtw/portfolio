@@ -1,7 +1,10 @@
 .container {
   padding: 64px 0px;
   background-color: #edf0ff;
-  height: 100vh;
+}
+
+.container:nth-child(even) {
+  background-color: #dbe1ff;
 }
 
 .container-padding {
@@ -11,4 +14,63 @@
 
 .mat-list-item-content {
   padding-left: 0px;
+}
+
+.header-image-elder {
+  background-image: url('../../../../assets/elder.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-image-kodai {
+  background-image: url('../../../../assets/kodai.png');
+  background-size: cover;
+}
+
+.header-image-twisted {
+  background-image: url('../../../../assets/twisted.png');
+  background-size: cover;
+}
+
+.header-image-overload {
+  background-image: url('../../../../assets/overload.png');
+  background-size: cover;
+}
+.header-image-brew {
+  background-image: url('../../../../assets/brew.png');
+  background-size: cover;
+}
+
+.header-image-restore {
+  background-image: url('../../../../assets/restore.png');
+  background-size: cover;
+}
+
+.header-image-prayer {
+  background-image: url('../../../../assets/prayer.png');
+  background-size: cover;
+}
+
+mat-card {
+  width: 300px;
+  background: #F4F6FF;
+}
+
+.mat-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-card-header {
+  flex-shrink: 0;
+}
+
+.mat-card-content {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+img {
+  height: 40px;
+  margin-right: 1rem;
 }
