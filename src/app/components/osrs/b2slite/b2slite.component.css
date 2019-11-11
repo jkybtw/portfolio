@@ -1,0 +1,14 @@
+.container {
+  padding: 64px 0px;
+  background-color: #edf0ff;
+  height: 100vh;
+}
+
+.container-padding {
+  width: 80vw;
+  margin: auto;
+}
+
+.mat-list-item-content {
+  padding-left: 0px;
+}
