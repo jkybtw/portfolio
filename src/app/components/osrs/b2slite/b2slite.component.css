@@ -1,7 +1,10 @@
 .container {
   padding: 64px 0px;
   background-color: #edf0ff;
-  height: 100vh;
+}
+
+.container:nth-child(even) {
+  background-color: #dbe1ff;
 }
 
 .container-padding {
@@ -11,4 +14,23 @@
 
 .mat-list-item-content {
   padding-left: 0px;
+}
+
+mat-form-field {
+  padding-right: 1rem;
+}
+
+mat-icon {
+  padding-right: 1rem;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+img {
+  width: 32px;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid transparent;
+}
+
+a :hover {
+  border-bottom: 2px solid #333747;
 }

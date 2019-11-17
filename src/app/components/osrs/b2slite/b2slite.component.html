@@ -1,6 +1,40 @@
 <div class="container">
   <div class="container-padding">
-    <h1>Coming soon</h1>
+    <div class="mat-display-2" fxLayout="row" fxLayoutAlign="start center">
+      <div fxFlex>
+        <span>b2sLite</span>
+      </div>
+      <div>
+        <a href="https://discord.gg/P26mM8K" target="_blank" matTooltip="Join the Discord!">
+          <img src="assets/discord-logo.png" alt="Discord Invite">
+        </a>
+      </div>
+      <div>
+        <a href="https://github.com/jkybtw/b2slite" target="_blank" matTooltip="View Github source">
+          <img src="assets/github-logo.png" alt="Github Source">
+        </a>
+      </div>
+    </div>
+    <h2 class="mat-display-1">Custom RuneLite client with PvM, PvP and more enhancements</h2>
+    <h2>Download the Launcher (Java 8 must be installed)</h2>
+    <mat-form-field>
+      <mat-select [(value)]="downloadOption">
+        <mat-option value="windows">Windows (EXE)</mat-option>
+        <mat-option value="other">Other (JAR)</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-raised-button (click)="download()">Download</button>
+  </div>
+</div>
+<div class="container">
+  <div class="container-padding">
+    <h2 class="mat-display-1">Features</h2>
+    <mat-list>
+      <mat-list-item *ngFor="let feature of features">
+        <mat-icon>check_circle_outline</mat-icon>
+        {{feature}}
+      </mat-list-item>
+    </mat-list>
   </div>
 </div>
 
