@@ -72,8 +72,8 @@ export class PotionsComponent implements OnInit {
     headerClass: 'header-image-prayer'
   };
 
-  protected combatPotions: Potion[] = [this.kodai, this.elder, this.twisted, this.overload];
-  protected otherPotions: Potion[] = [this.restore, this.brew, this.prayer];
+  combatPotions: Potion[] = [this.kodai, this.elder, this.twisted, this.overload];
+  otherPotions: Potion[] = [this.restore, this.brew, this.prayer];
 
   constructor() { }
 
