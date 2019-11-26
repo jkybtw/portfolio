@@ -4,7 +4,7 @@
     <div class="options" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="start center" fxLayoutAlign.lt-sm="start start" fxLayoutGap="1rem grid">
       <mat-form-field>
         <mat-label>How many people?</mat-label>
-        <input type="number" matInput [(ngModel)]="numPeople" min=1 max=100>
+        <input type="number" matInput [(ngModel)]="numPeople" min=1 max=100 (change)=updateAll()>
       </mat-form-field>
       <mat-checkbox [(ngModel)]="split" (change)="updateOvls()" matTooltip="Take two doses of overload per person" matTooltipPosition="above">Split overloads</mat-checkbox>
       <mat-checkbox [(ngModel)]="extras" (change)="updateRestores(); updateBrews()" matTooltip="One extra brew and restore per person" matTooltipPosition="above">Extras for piles</mat-checkbox>
