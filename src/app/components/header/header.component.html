@@ -7,6 +7,6 @@
       <button mat-menu-item [routerLink]="['/osrs/calculator']" routerLinkActive="router-link-active" >Potions Calculator</button>
       <button mat-menu-item [routerLink]="['/osrs/potions']" routerLinkActive="router-link-active" >Potions Guide</button>
     </mat-menu>
-    <button mat-button (click)="comingSoon()">Projects</button>
+    <button mat-button [ngx-scroll-to]="'#projects-header'">Projects</button>
   </div>
 </mat-toolbar>

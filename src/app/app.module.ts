@@ -25,6 +25,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { B2sliteComponent } from './components/osrs/b2slite/b2slite.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSelectModule } from '@angular/material/select';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { MatSelectModule } from '@angular/material/select';
     FormsModule,
     MatTooltipModule,
     MatSnackBarModule,
-    MatSelectModule
+    MatSelectModule,
+    ScrollToModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
