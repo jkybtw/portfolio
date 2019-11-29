@@ -27,7 +27,10 @@
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/three.r92.min.js",
+              "src/assets/vanta.fog.min.js"
+            ]
           },
           "configurations": {
             "production": {
