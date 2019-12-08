@@ -10,7 +10,8 @@ const routes: Routes = [
   { path: '', component: MainComponent },
   { path: 'osrs/b2sLite', component: B2sliteComponent },
   { path: 'osrs/calculator', component: CalculatorComponent },
-  { path: 'osrs/potions', component: PotionsComponent }
+  { path: 'osrs/potions', component: PotionsComponent },
+  { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({
